@@ -1,0 +1,56 @@
+.calendar_container{
+    max-width: 100%;
+}
+
+.calendar_top_menu ul{
+    max-width: 100%;
+    display: flex;
+    padding: 30px 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.calendar_list li{
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+    padding: 5px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.calendar_list li:last-child{
+    margin: 0px;
+}
+
+.selected{
+    border: 1px solid black;
+}
+
+.calendar_day{
+    padding: 10px 15px;
+}
+
+.month_list{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:830px) {
+    .calendar_top_menu ul{
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    .calendar_list li{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 5px 0px;
+        width: 50%;
+
+    }
+    .month_list{
+        justify-content: flex-start;
+    }
+}
