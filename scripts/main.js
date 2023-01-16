@@ -1,4 +1,8 @@
 const month_list = document.getElementsByClassName("calendar_list")
+
+// Тут определяется месяц
+
+
 month_list[0].addEventListener("click",function () {
      if (event.target.classList.contains("nonselected")) {
         const selected_month = document.querySelector(".selected")
